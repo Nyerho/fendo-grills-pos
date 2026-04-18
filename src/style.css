@@ -170,6 +170,43 @@ button {
   gap: 10px;
 }
 
+.pos-chips {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 2px;
+}
+
+.chip {
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(27, 27, 37, 0.55);
+  color: var(--text);
+  font-weight: 750;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.pos-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pos-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pos-section-title {
+  font-weight: 850;
+  letter-spacing: 0.2px;
+}
+
 .product {
   height: 74px;
   border-radius: 16px;

@@ -7,162 +7,189 @@ const baseCatalog = {
     {
       id: 'fendo_shawarma_main',
       name: 'Fendo Shawarma Main',
+      category: 'shawarma',
       priceNaira: 6000,
       recipe: { shawarma_bread: 1, shawarma_filling_portion: 1 },
     },
     {
       id: 'regular_shawarma',
       name: 'Regular Shawarma',
+      category: 'shawarma',
       priceNaira: 4000,
       recipe: { shawarma_bread: 1, shawarma_filling_portion: 1 },
     },
     {
       id: 'suya_shawarma',
       name: 'Suya Shawarma',
+      category: 'shawarma',
       priceNaira: 4500,
       recipe: { shawarma_bread: 1, shawarma_filling_portion: 1, suya_spice: 1 },
     },
     {
       id: 'suya_shawarma_large',
       name: 'Suya Shawarma (Large)',
+      category: 'shawarma',
       priceNaira: 6500,
       recipe: { shawarma_bread: 1, shawarma_filling_portion: 2, suya_spice: 1 },
     },
     {
       id: 'barbecue_fish_7000',
       name: 'Barbecue Fish (₦7k)',
+      category: 'grilled',
       priceNaira: 7000,
       recipe: { fish_portion: 1 },
     },
     {
       id: 'barbecue_fish_10000',
       name: 'Barbecue Fish (₦10k)',
+      category: 'grilled',
       priceNaira: 10000,
       recipe: { fish_portion: 1 },
     },
     {
       id: 'bole_with_fish_8000',
       name: 'Grilled Plantain + Fish (₦8k)',
+      category: 'grilled',
       priceNaira: 8000,
       recipe: { plantain_portion: 1, fish_portion: 1 },
     },
     {
       id: 'bole_with_fish_10000',
       name: 'Grilled Plantain + Fish (₦10k)',
+      category: 'grilled',
       priceNaira: 10000,
       recipe: { plantain_portion: 1, fish_portion: 1 },
     },
     {
       id: 'fish_plantain_combo_12000',
       name: 'Barbecue Fish + Plantain Combo',
+      category: 'grilled',
       priceNaira: 12000,
       recipe: { fish_portion: 1, plantain_portion: 1 },
     },
     {
       id: 'goat_meat_pepper_soup_5500',
       name: 'Goat Meat Pepper Soup (₦5.5k)',
+      category: 'pepper_soup',
       priceNaira: 5500,
       recipe: { goat_meat_portion: 1 },
     },
     {
       id: 'goat_meat_pepper_soup_7000',
       name: 'Goat Meat Pepper Soup (₦7k)',
+      category: 'pepper_soup',
       priceNaira: 7000,
       recipe: { goat_meat_portion: 1 },
     },
     {
       id: 'pepper_soup_6500',
       name: 'Pepper Soup (₦6.5k)',
+      category: 'pepper_soup',
       priceNaira: 6500,
       recipe: { pepper_soup_portion: 1 },
     },
     {
       id: 'pepper_soup_8000',
       name: 'Pepper Soup (₦8k)',
+      category: 'pepper_soup',
       priceNaira: 8000,
       recipe: { pepper_soup_portion: 1 },
     },
     {
       id: 'catfish_pepper_soup_6000',
       name: 'Catfish Pepper Soup',
+      category: 'pepper_soup',
       priceNaira: 6000,
       recipe: { catfish_portion: 1 },
     },
     {
       id: 'gril_tendo_combo_9000',
       name: 'Fendo Gril-tendo Combo (₦9k)',
+      category: 'sides',
       priceNaira: 9000,
       recipe: { fish_portion: 1, noodles_pack: 1, hotdog: 1 },
     },
     {
       id: 'gril_tendo_combo_11000',
       name: 'Fendo Gril-tendo Combo (₦11k)',
+      category: 'sides',
       priceNaira: 11000,
       recipe: { fish_portion: 1, noodles_pack: 1, hotdog: 1 },
     },
     {
       id: 'chicken_and_chips',
       name: 'Chicken & Chips',
+      category: 'sides',
       priceNaira: 5500,
       recipe: { chicken_portion: 1, chips_portion: 1 },
     },
     {
       id: 'turkey_and_chips',
       name: 'Turkey & Chips',
+      category: 'sides',
       priceNaira: 6000,
       recipe: { turkey_portion: 1, chips_portion: 1 },
     },
     {
       id: 'small_chops_pack',
       name: 'Small Chops (Pack)',
+      category: 'sides',
       priceNaira: 3000,
       recipe: { small_chops_pack: 1 },
     },
     {
       id: 'veggie_noodles',
       name: 'Veggie Noodles',
+      category: 'sides',
       priceNaira: 3000,
       recipe: { noodles_pack: 1, veggies_portion: 1 },
     },
     {
       id: 'white_rice_2000',
       name: 'White Rice (₦2k)',
+      category: 'sides',
       priceNaira: 2000,
       recipe: { rice_portion: 1 },
     },
     {
       id: 'white_rice_3500',
       name: 'White Rice (₦3.5k)',
+      category: 'sides',
       priceNaira: 3500,
       recipe: { rice_portion: 1 },
     },
     {
       id: 'rice_with_sauce_or_soup_3500',
       name: 'Rice + Sauce/Soup',
+      category: 'sides',
       priceNaira: 3500,
       recipe: { rice_portion: 1, sauce_or_soup: 1 },
     },
     {
       id: 'fruity_zobo',
       name: 'Fruity Zobo',
+      category: 'drinks',
       priceNaira: 1000,
       recipe: { zobo_bottle: 1 },
     },
     {
       id: 'smoothies',
       name: 'Smoothies',
+      category: 'drinks',
       priceNaira: 2500,
       recipe: { smoothie_cup: 1 },
     },
     {
       id: 'soft_drinks',
       name: 'Soft Drinks',
+      category: 'drinks',
       priceNaira: 800,
       recipe: { soft_drink_bottle: 1 },
     },
     {
       id: 'alcohol',
       name: 'Alcohol (Set price)',
+      category: 'drinks',
       priceNaira: 0,
       recipe: { alcohol_unit: 1 },
     },
@@ -569,6 +596,57 @@ function renderTabbar() {
 function renderPOS() {
   const lines = computeTicketLines()
   const totalNaira = lines.reduce((sum, l) => sum + l.lineTotalNaira, 0)
+  const products = getProducts()
+  const sections = [
+    { id: 'shawarma', name: 'Shawarma' },
+    { id: 'grilled', name: 'Grilled' },
+    { id: 'pepper_soup', name: 'Pepper Soup' },
+    { id: 'sides', name: 'Sides' },
+    { id: 'drinks', name: 'Drinks' },
+  ]
+
+  const byCategory = new Map(sections.map((s) => [s.id, []]))
+  for (const p of products) {
+    const categoryId = p.category || 'sides'
+    if (!byCategory.has(categoryId)) byCategory.set(categoryId, [])
+    byCategory.get(categoryId).push(p)
+  }
+
+  const chipsHtml = `
+    <div class="pos-chips" role="navigation" aria-label="Menu sections">
+      ${sections
+        .filter((s) => (byCategory.get(s.id) || []).length)
+        .map((s) => `<button class="chip" type="button" data-jump="${s.id}">${s.name}</button>`)
+        .join('')}
+    </div>
+  `
+
+  const sectionsHtml = sections
+    .filter((s) => (byCategory.get(s.id) || []).length)
+    .map((s) => {
+      const items = byCategory.get(s.id) || []
+      return `
+        <section class="pos-section" id="sec-${s.id}">
+          <div class="pos-section-head">
+            <div class="pos-section-title">${s.name}</div>
+          </div>
+          <div class="grid">
+            ${items
+              .map(
+                (p) => `
+                  <button class="product" type="button" data-add="${p.id}">
+                    <div class="product-name">${p.name}</div>
+                    <div class="product-price">₦${formatNaira(p.priceNaira)}</div>
+                  </button>
+                `
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    })
+    .join('')
+
   const itemsHtml =
     lines.length === 0
       ? `<div class="empty">Tap a product to start an order.</div>`
@@ -603,18 +681,8 @@ function renderPOS() {
         }>Clear</button>
       </div>
 
-      <div class="grid">
-        ${getProducts()
-          .map(
-            (p) => `
-              <button class="product" type="button" data-add="${p.id}">
-                <div class="product-name">${p.name}</div>
-                <div class="product-price">₦${formatNaira(p.priceNaira)}</div>
-              </button>
-            `
-          )
-          .join('')}
-      </div>
+      ${chipsHtml}
+      ${sectionsHtml}
 
       <div class="card">
         <div class="card-title">Current Order</div>
@@ -1264,6 +1332,14 @@ document.addEventListener('click', (e) => {
   if (tabBtn) {
     const tab = tabBtn.getAttribute('data-tab')
     if (tab) setActiveTab(tab)
+    return
+  }
+
+  const jumpBtn = target.closest('[data-jump]')
+  if (jumpBtn) {
+    const id = jumpBtn.getAttribute('data-jump')
+    const el = id ? document.getElementById(`sec-${id}`) : null
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return
   }
 
