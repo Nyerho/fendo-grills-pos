@@ -69,31 +69,24 @@ const baseCatalog = {
     },
     {
       id: 'goat_meat_pepper_soup_5500',
-      name: 'Goat Meat Pepper Soup (₦5.5k)',
+      name: 'Goat Meat Pepper Soup',
+      category: 'pepper_soup',
+      priceNaira: 3500,
+      recipe: { goat_meat_portion: 1 },
+    },
+    {
+      id: 'pepper_sauce',
+      name: 'Pepper Sauce',
+      category: 'pepper_soup',
+      priceNaira: 600,
+      recipe: { pepper_sauce_portion: 1 },
+    },
+    {
+      id: 'pepper_soup_and_white_rice',
+      name: 'Pepper Soup And White Rice',
       category: 'pepper_soup',
       priceNaira: 5500,
-      recipe: { goat_meat_portion: 1 },
-    },
-    {
-      id: 'goat_meat_pepper_soup_7000',
-      name: 'Goat Meat Pepper Soup (₦7k)',
-      category: 'pepper_soup',
-      priceNaira: 7000,
-      recipe: { goat_meat_portion: 1 },
-    },
-    {
-      id: 'pepper_soup_6500',
-      name: 'Pepper Soup (₦6.5k)',
-      category: 'pepper_soup',
-      priceNaira: 6500,
-      recipe: { pepper_soup_portion: 1 },
-    },
-    {
-      id: 'pepper_soup_8000',
-      name: 'Pepper Soup (₦8k)',
-      category: 'pepper_soup',
-      priceNaira: 8000,
-      recipe: { pepper_soup_portion: 1 },
+      recipe: { goat_meat_portion: 1, pepper_soup_portion: 1, rice_portion: 1 },
     },
     {
       id: 'catfish_pepper_soup_head_4000',
@@ -108,13 +101,6 @@ const baseCatalog = {
       category: 'pepper_soup',
       priceNaira: 3500,
       recipe: { catfish_center_tail: 1, pepper_soup_portion: 1 },
-    },
-    {
-      id: 'goat_pepper_soup_with_white_rice',
-      name: 'Goat Meat Pepper Soup + White Rice',
-      category: 'pepper_soup',
-      priceNaira: 0,
-      recipe: { goat_meat_portion: 1, pepper_soup_portion: 1, rice_portion: 1 },
     },
     {
       id: 'gril_tendo_combo_9000',
@@ -153,24 +139,45 @@ const baseCatalog = {
     },
     {
       id: 'fried_chicken_wings_piece',
-      name: 'Fried Chicken Wings (per piece)',
+      name: 'Fried Chicken Wings',
       category: 'grilled',
-      priceNaira: 2500,
+      priceNaira: 3500,
       recipe: { chicken_wings_piece: 1 },
     },
     {
       id: 'grilled_turkey_wings',
       name: 'Grilled Turkey Wings',
       category: 'grilled',
-      priceNaira: 6099,
+      priceNaira: 6000,
       recipe: { turkey_wings_piece: 1 },
     },
     {
       id: 'fried_turkey_wings',
       name: 'Fried Turkey Wings',
       category: 'grilled',
-      priceNaira: 6099,
+      priceNaira: 6000,
       recipe: { turkey_wings_piece: 1 },
+    },
+    {
+      id: 'sauce_turkey_wings',
+      name: 'Sauce Turkey Wings',
+      category: 'grilled',
+      priceNaira: 6500,
+      recipe: { turkey_wings_piece: 1, wings_sauce_portion: 1 },
+    },
+    {
+      id: 'egg',
+      name: 'Egg (Fried Or Boiled)',
+      category: 'sides',
+      priceNaira: 500,
+      recipe: { egg_unit: 1 },
+    },
+    {
+      id: 'hotdog_item',
+      name: 'Hotdog',
+      category: 'sides',
+      priceNaira: 600,
+      recipe: { hotdog: 1 },
     },
     {
       id: 'small_chops_pack',
@@ -188,7 +195,7 @@ const baseCatalog = {
     },
     {
       id: 'white_rice_2000',
-      name: 'White Rice (₦2k)',
+      name: 'White Rice',
       category: 'sides',
       priceNaira: 2000,
       recipe: { rice_portion: 1 },
@@ -209,24 +216,59 @@ const baseCatalog = {
     },
     {
       id: 'dodo_fried_plantain',
-      name: 'Dodo (Fried Plantain)',
+      name: 'Dodo',
       category: 'sides',
-      priceNaira: 1000,
+      priceNaira: 700,
       recipe: { plantain_fried_portion: 1 },
     },
     {
       id: 'bole_plantain',
-      name: 'Bole (Plantain)',
+      name: 'Spiced Bole',
       category: 'sides',
-      priceNaira: 500,
+      priceNaira: 600,
       recipe: { plantain_bole_portion: 1 },
     },
     {
-      id: 'fruity_zobo',
-      name: 'Fruity Zobo',
-      category: 'drinks',
+      id: 'chips_fries',
+      name: 'Chips (Fries)',
+      category: 'sides',
       priceNaira: 1000,
+      recipe: { chips_portion: 1 },
+    },
+    {
+      id: 'fruity_zobo',
+      name: 'Fendo Fruity Zobo',
+      category: 'drinks',
+      priceNaira: 1200,
       recipe: { zobo_bottle: 1 },
+    },
+    {
+      id: 'black_luna_cocktail',
+      name: 'Black Luna Cocktail',
+      category: 'drinks',
+      priceNaira: 3500,
+      recipe: { black_luna_cocktail: 1 },
+    },
+    {
+      id: 'fanta',
+      name: 'Fanta',
+      category: 'drinks',
+      priceNaira: 650,
+      recipe: { fanta_bottle: 1 },
+    },
+    {
+      id: 'coca_cola',
+      name: 'Coca-Cola',
+      category: 'drinks',
+      priceNaira: 600,
+      recipe: { coca_cola_bottle: 1 },
+    },
+    {
+      id: 'smirnoff_ice_double_black',
+      name: 'Smirnoff Ice Double Black',
+      category: 'drinks',
+      priceNaira: 1200,
+      recipe: { smirnoff_ice_double_black: 1 },
     },
     {
       id: 'smoothies',
@@ -258,6 +300,7 @@ const baseCatalog = {
     { id: 'plantain_portion', name: 'Plantain (Bole)', unit: 'portion', lowStockThreshold: 5 },
     { id: 'goat_meat_portion', name: 'Goat Meat', unit: 'portion', lowStockThreshold: 5 },
     { id: 'pepper_soup_portion', name: 'Pepper Soup', unit: 'portion', lowStockThreshold: 5 },
+    { id: 'pepper_sauce_portion', name: 'Pepper Sauce', unit: 'portion', lowStockThreshold: 10 },
     { id: 'catfish_portion', name: 'Catfish', unit: 'portion', lowStockThreshold: 5 },
     { id: 'catfish_head', name: 'Catfish Head', unit: 'pcs', lowStockThreshold: 5 },
     { id: 'catfish_center_tail', name: 'Catfish Center + Tail', unit: 'pcs', lowStockThreshold: 5 },
@@ -267,6 +310,8 @@ const baseCatalog = {
     { id: 'turkey_portion', name: 'Turkey', unit: 'portion', lowStockThreshold: 10 },
     { id: 'chicken_wings_piece', name: 'Chicken Wings', unit: 'pcs', lowStockThreshold: 10 },
     { id: 'turkey_wings_piece', name: 'Turkey Wings', unit: 'pcs', lowStockThreshold: 10 },
+    { id: 'wings_sauce_portion', name: 'Wings Sauce', unit: 'portion', lowStockThreshold: 10 },
+    { id: 'egg_unit', name: 'Egg', unit: 'pcs', lowStockThreshold: 10 },
     { id: 'chips_portion', name: 'Chips', unit: 'portion', lowStockThreshold: 10 },
     { id: 'small_chops_pack', name: 'Small Chops', unit: 'pack', lowStockThreshold: 10 },
     { id: 'veggies_portion', name: 'Veggies', unit: 'portion', lowStockThreshold: 10 },
@@ -275,6 +320,10 @@ const baseCatalog = {
     { id: 'plantain_bole_portion', name: 'Plantain (Bole)', unit: 'portion', lowStockThreshold: 10 },
     { id: 'sauce_or_soup', name: 'Sauce / Soup', unit: 'portion', lowStockThreshold: 10 },
     { id: 'zobo_bottle', name: 'Fruity Zobo', unit: 'bottle', lowStockThreshold: 10 },
+    { id: 'black_luna_cocktail', name: 'Black Luna Cocktail', unit: 'cup', lowStockThreshold: 10 },
+    { id: 'fanta_bottle', name: 'Fanta', unit: 'bottle', lowStockThreshold: 10 },
+    { id: 'coca_cola_bottle', name: 'Coca-Cola', unit: 'bottle', lowStockThreshold: 10 },
+    { id: 'smirnoff_ice_double_black', name: 'Smirnoff Ice Double Black', unit: 'bottle', lowStockThreshold: 10 },
     { id: 'smoothie_cup', name: 'Smoothies', unit: 'cup', lowStockThreshold: 10 },
     { id: 'soft_drink_bottle', name: 'Soft Drinks', unit: 'bottle', lowStockThreshold: 10 },
     { id: 'alcohol_unit', name: 'Alcohol', unit: 'unit', lowStockThreshold: 10 },
@@ -426,6 +475,107 @@ function downloadTextFile({ filename, text, mimeType }) {
   a.click()
   a.remove()
   URL.revokeObjectURL(url)
+}
+
+let lastReceipt = null
+
+function formatDateTime(isoString) {
+  const d = new Date(isoString)
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  const hh = String(d.getHours()).padStart(2, '0')
+  const mm = String(d.getMinutes()).padStart(2, '0')
+  return `${y}-${m}-${day} ${hh}:${mm}`
+}
+
+function buildReceiptText(sale) {
+  const receiptNo = String(sale?.id || '').slice(0, 8).toUpperCase()
+  const when = sale?.ts ? formatDateTime(sale.ts) : ''
+  const operatorName = String(sale?.operatorName || '').trim()
+  const method = String(sale?.paymentMethod || '').toUpperCase()
+  const lines = Array.isArray(sale?.lines) ? sale.lines : []
+
+  const parts = []
+  parts.push('FENDO GRILLS')
+  parts.push('POS RECEIPT')
+  parts.push('')
+  if (receiptNo) parts.push(`Receipt: ${receiptNo}`)
+  if (when) parts.push(`Date: ${when}`)
+  if (operatorName) parts.push(`Salesperson: ${operatorName}`)
+  parts.push(`Payment: ${method}`)
+  parts.push('------------------------------')
+  for (const l of lines) {
+    const qty = Number(l.qty) || 0
+    const price = Number(l.unitPriceNaira) || 0
+    const name = String(l.name || '')
+    const lineTotal = qty * price
+    parts.push(`${qty} x ${name}`)
+    parts.push(`   ₦${formatNaira(price)}   =   ₦${formatNaira(lineTotal)}`)
+  }
+  parts.push('------------------------------')
+  parts.push(`TOTAL: ₦${formatNaira(sale?.totalNaira || 0)}`)
+  if ((sale?.paymentMethod || '') === 'cash') {
+    parts.push(`Cash received: ₦${formatNaira(sale?.cashReceivedNaira || 0)}`)
+    parts.push(`Change given: ₦${formatNaira(sale?.changeGivenNaira || 0)}`)
+  }
+  parts.push('')
+  parts.push('Thanks for your patronage!')
+  return parts.join('\n')
+}
+
+function openReceiptModal(sale) {
+  if (!sale) return
+  const text = buildReceiptText(sale)
+  lastReceipt = { saleId: sale.id, text }
+  openModal(
+    `
+      <div class="modal-head">
+        <div class="modal-title">Receipt</div>
+        <button class="ghost" type="button" data-action="close-modal">Close</button>
+      </div>
+      <div class="modal-body">
+        <pre class="receipt">${text.replaceAll('<', '&lt;')}</pre>
+        <div class="receipt-actions">
+          <button class="ghost" type="button" data-action="receipt-download">Download</button>
+          <button class="ghost" type="button" data-action="receipt-print">Print</button>
+          <button class="primary" type="button" data-action="receipt-share">Share</button>
+        </div>
+      </div>
+    `
+  )
+}
+
+function printReceiptText(text) {
+  const win = window.open('', '_blank')
+  if (!win) return false
+  const safe = String(text || '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+  win.document.open()
+  win.document.write(`
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Receipt</title>
+        <style>
+          body { margin: 0; padding: 16px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+          pre { white-space: pre-wrap; word-break: break-word; font-size: 13px; line-height: 1.35; }
+          @media print { body { padding: 0; } }
+        </style>
+      </head>
+      <body>
+        <pre>${safe}</pre>
+      </body>
+    </html>
+  `)
+  win.document.close()
+  win.focus()
+  win.print()
+  return true
 }
 
 function makeId() {
@@ -645,6 +795,7 @@ function finalizeSale(paymentMethod, { cashReceivedNaira, changeGivenNaira } = {
   ticket = {}
   closeModal()
   render()
+  openReceiptModal(sale)
 }
 
 function renderTabbar() {
@@ -858,6 +1009,9 @@ function renderLedger() {
                 </div>
                 <div class="sale-sub">Salesperson: ${operatorName} · Profit: ₦${formatNaira(saleProfit)}</div>
                 ${cashLine}
+                <div class="sale-actions">
+                  <button class="ghost" type="button" data-receipt="${s.id}">Receipt</button>
+                </div>
                 <div class="sale-lines">
                   ${lines
                     .map(
@@ -1439,6 +1593,14 @@ document.addEventListener('click', (e) => {
     return
   }
 
+  const receiptBtn = target.closest('[data-receipt]')
+  if (receiptBtn) {
+    const id = receiptBtn.getAttribute('data-receipt')
+    const sale = currentDay.sales.find((s) => s && s.id === id)
+    if (sale) openReceiptModal(sale)
+    return
+  }
+
   const actionBtn = target.closest('[data-action]')
   if (actionBtn) {
     const action = actionBtn.getAttribute('data-action')
@@ -1448,6 +1610,31 @@ document.addEventListener('click', (e) => {
     if (action === 'set-start-stock') openStartShiftModal()
     if (action === 'stop-shift') stopActiveShift()
     if (action === 'edit-prices') requireAdminThen(openEditPricesModal)
+    if (action === 'receipt-download') {
+      if (lastReceipt?.text) {
+        downloadTextFile({
+          filename: `fendo-receipt-${String(lastReceipt.saleId || '').slice(0, 8)}.txt`,
+          text: lastReceipt.text,
+          mimeType: 'text/plain;charset=utf-8',
+        })
+      }
+    }
+    if (action === 'receipt-print') {
+      if (lastReceipt?.text) printReceiptText(lastReceipt.text)
+    }
+    if (action === 'receipt-share') {
+      if (lastReceipt?.text) {
+        if (navigator.share) {
+          navigator.share({ title: 'Receipt', text: lastReceipt.text }).catch(() => {})
+        } else {
+          downloadTextFile({
+            filename: `fendo-receipt-${String(lastReceipt.saleId || '').slice(0, 8)}.txt`,
+            text: lastReceipt.text,
+            mimeType: 'text/plain;charset=utf-8',
+          })
+        }
+      }
+    }
     if (action === 'go-inventory') {
       closeModal()
       setActiveTab('inventory')
